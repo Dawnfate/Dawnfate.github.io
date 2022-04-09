@@ -1,0 +1,11 @@
+Name: face-api
+Host: localhost
+Port: 8081
+DataSourceName:
+  root:123456@(127.0.0.1:3306)/hotel?charset=utf8
+
+TenXunCloud:
+  SecretId: AKIDA9sLXT8WdT3LM6ZlgKifLkumNhlY4IFw
+  SecretKey: QZQ2NSGp77qHSN0MRFm11jAKEsFLAizz
+  Region: ap-guangzhou
+

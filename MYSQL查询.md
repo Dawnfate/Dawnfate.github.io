@@ -69,6 +69,8 @@ select area from world  y where x.continent = y.continent and area > 0
 select continent,name from world x where name <= all(
 select name from world y where x.continent = y.continent order by continent
 ) 
+方法2：
+select continent,min(name) from world x group by continent
 ```
 
 9.找出洲份，當中全部國家都有少於或等於 25000000 人口. 在這些洲份中，列出國家名字**name**，**continent** 洲份和**population**人口。

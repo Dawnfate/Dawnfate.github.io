@@ -1,0 +1,28 @@
+syntax = "v1"
+
+type (
+	FaceSearchReq {
+		Imagebase64 string `json:"imagebase64"`
+	}
+
+	FaceSearchResp {
+		UserName string `json:"username"`
+	}
+)
+
+info(
+	title: ""
+	desc: "face api"
+	author: "dawn"
+	email: ""
+	version: "1"
+)
+
+service face-api {
+	
+	@server(
+		handler: faceSearchHandler
+		folder: open
+	)
+	post /faceSearch (FaceSearchReq) returns(FaceSearchResp)
+}
